@@ -20,45 +20,68 @@
                 <h1>Welcome to Traveler Lodging</h1>
                 <h2>Please Select Your Lodging</h2>
             </header>
-            <table class="table table-striped">
+            <table class="table table-striped table-hover">
                 <thead>
                     <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
+                        <th>Property</th>
+                        <th>Price $/day</th>
+                        <th>Rating</th>
+                        <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
+                        <td>Hilton</td>
+                        <td>$180/day</td>
+                        <td>4 Stars</td>
+                        <td class="lodging-choices">
+                            <img src="../Traveler/assets/images/lodging/hilton-wb.jpg" id="greece">
+                            Hilton
                     </tr>
                     <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
+                        <td>Marriott</td>
+                        <td>$210/day</td>
+                        <td>5 Stars</td>
+                        <td class="lodging-choices">
+                            <img src="../Traveler/assets/images/lodging/Marriott.jpg" id="greece">
+                            Marriott
                     </tr>
                     <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
+                        <td>Hampton Inn</td>
+                        <td>$140/day</td>
+                        <td>3 Stars</td>
+                        <td class="lodging-choices">
+                            <img src="../Traveler/assets/images/lodging/hampton-color.jpeg" id="greece">
+                            Hampton Inn
+                    </tr>
+                    <tr>
+                        <td>Best Western</td>
+                        <td>$100/day</td>
+                        <td>2 Stars</td>
+                        <td class="lodging-choices">
+                            <img src="../Traveler/assets/images/lodging/BWMain.jpg" id="greece">
+                            Best Western
+                        </td>
                     </tr>
                 </tbody>
             </table>
+
             <footer>
-                <div class="row gy-4 row-cols-1 row-cols-sm-2   ">
-                    <div class="col" >
-                        <img src="../Traveler/assets/images/greece.jpg" id="greece" >
-                        <h3 id="destinationNm"></h3>
+                <div class="container-lg">
+                    <div class="row gy-4 row-cols-1 row-cols-sm-2">
+                        <div class="col">
+                            <img src="../Traveler/assets/images/greece.jpg" id="greece">
+                            <h3 id="destinationNm"></h3>
+                        </div>
+                        <div class="col">
+                            <h3 id="start-date"></h3>
+                            <h3 id="end-date"></h3>
+                        </div>
                     </div>
-                    <div class="col" >
-                        <h3 id="start-date"></h3>
-                        <h3 id="end-date"></h3>
-                    </div>
-                </footer>
+            </footer>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
