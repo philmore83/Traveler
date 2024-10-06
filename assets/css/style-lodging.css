@@ -37,3 +37,21 @@ button {
     color: #bdd1c5;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
+table tbody tr:hover {
+    cursor: pointer;
+    background-color: #f0f0f0; /* Change color on hover */
+}
+.selected-row {
+    background-color: lightblue ;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between buttons */
+    padding: 10px; /* Optional: add padding for spacing */
+}
+#cityImage {
+    width: 20%;    /* Image takes up the full width of its container */
+    height: auto;   /* Maintains aspect ratio */
+}

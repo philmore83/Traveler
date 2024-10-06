@@ -46,7 +46,7 @@ submitButton.addEventListener('click', function (event) {
     destinationName: destinationName.trim(),
   };
   localStorage.setItem('traveler', JSON.stringify(traveler));
-  //redirectPage("hotels.html");
+  redirectPage("lodging.html");
  // renderMessage();
 });
 

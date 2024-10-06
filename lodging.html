@@ -17,12 +17,33 @@
     <section class="lodging min-vh-100">
         <div class="container mt-3">
             <header>
+                <div class="button-container">
+                    <button id="backIndex">City</button>
+                    <button id="submitLodging">Next step: Dining</button>
+                </div>
+             
+                
                 <h1>Welcome to Traveler Lodging</h1>
                 <h2>Please Select Your Lodging</h2>
+                <div class="container-lg">
+                    <div class="row gy-4 row-cols-1 ">
+                        <div class="col">
+                            <img src="" id="cityImage">
+                            <h3 id="destinationNm"></h3>
+                        </div>
+                        <div class="col">
+                            <h3 id="start-date"></h3>
+                            <h3 id="end-date"></h3>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
             </header>
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover" id="lodging">
                 <thead>
                     <tr>
+                        <th>Select</th>
                         <th>Property</th>
                         <th>Price $/day</th>
                         <th>Rating</th>
@@ -30,7 +51,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr >
+                        <td><input type="checkbox" class="select-checkbox" id="hilton"></td>
                         <td>Hilton</td>
                         <td>$180/day</td>
                         <td>4 Stars</td>
@@ -38,7 +60,8 @@
                             <img src="../Traveler/assets/images/lodging/hilton-wb.jpg" id="greece">
                             Hilton
                     </tr>
-                    <tr>
+                    <tr >
+                        <td><input type="checkbox" class="select-checkbox" id="marriot"></td>
                         <td>Marriott</td>
                         <td>$210/day</td>
                         <td>5 Stars</td>
@@ -46,7 +69,8 @@
                             <img src="../Traveler/assets/images/lodging/Marriott.jpg" id="greece">
                             Marriott
                     </tr>
-                    <tr>
+                    <tr >
+                        <td><input type="checkbox" class="select-checkbox" id="hampton"></td>
                         <td>Hampton Inn</td>
                         <td>$140/day</td>
                         <td>3 Stars</td>
@@ -54,7 +78,8 @@
                             <img src="../Traveler/assets/images/lodging/hampton-color.jpeg" id="greece">
                             Hampton Inn
                     </tr>
-                    <tr>
+                    <tr >
+                        <td><input type="checkbox" class="select-checkbox" id="western"></td>
                         <td>Best Western</td>
                         <td>$100/day</td>
                         <td>2 Stars</td>
@@ -67,17 +92,7 @@
             </table>
 
             <footer>
-                <div class="container-lg">
-                    <div class="row gy-4 row-cols-1 row-cols-sm-2">
-                        <div class="col">
-                            <img src="../Traveler/assets/images/greece.jpg" id="greece">
-                            <h3 id="destinationNm"></h3>
-                        </div>
-                        <div class="col">
-                            <h3 id="start-date"></h3>
-                            <h3 id="end-date"></h3>
-                        </div>
-                    </div>
+                
             </footer>
         </div>
     </section>
