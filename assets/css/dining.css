@@ -3,37 +3,42 @@
 }
 
 .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 200px; /* adjust to your image size */
-    height: 200px; /* adjust to your image size */
+    width: 900px; /* adjust to your image size */
+    height: 700px; /* adjust to your image size */
+    padding: 20px;
+    margin-bottom: 10px;
   }
   
   .image-1 {
+    
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 140%;
     height: 100%;
     opacity: 1;
     transition: opacity 0.5s ease; /* adjust transition duration and easing */
     background-color: #ffffff;
-    padding: 15px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
   
   .image-2 {
+    
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 140%;
     height: 100%;
     opacity: 0;
     background-color: #ffffff;
-    padding: 15px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
   
@@ -45,13 +50,28 @@
     opacity: 1;
   }
 
-h1, h2, h3{
+h1, h2{
     text-align: center;
+}
+
+h5{
+    text-align: center;
+    padding: 1%;
 }
 
 h3{
     background-color: #ffffff;
-    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+    text-align: center;
+    margin-inline-start: 350px;
+    width: 50%;
+}
+
+p{
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    padding: 1%; 
+    
 }
 
 button{
