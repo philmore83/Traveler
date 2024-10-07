@@ -1,81 +1,86 @@
 *{
-    background-color: #bdd1c5 ;
+  background-color: #bdd1c5 ;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 900px; /* adjust to your image size */
-    height: 700px; /* adjust to your image size */
-    padding: 20px;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 900px; /* adjust to your image size */
+  height: 700px; /* adjust to your image size */
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.image-1 {
   
-  .image-1 {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 140%;
-    height: 100%;
-    opacity: 1;
-    transition: opacity 0.5s ease; /* adjust transition duration and easing */
-    background-color: #ffffff;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* adjust transition duration and easing */
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.image-2 {
   
-  .image-2 {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 140%;
-    height: 100%;
-    opacity: 0;
-    background-color: #ffffff;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
-  
-  .image-container:hover .image-1 {
-    opacity: 0;
-  }
-  
-  .image-container:hover .image-2 {
-    opacity: 1;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140%;
+  height: 100%;
+  opacity: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.image-container:hover .image-1 {
+  opacity: 0;
+}
+
+.image-container:hover .image-2 {
+  opacity: 1;
+}
 
 h1, h2{
-    text-align: center;
+  text-align: center;
 }
 
 h5{
-    text-align: center;
-    padding: 1%;
+  text-align: center;
+  padding: 1%;
 }
 
 h3{
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .8);
-    text-align: center;
-    margin-inline-start: 350px;
-    width: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+  text-align: center;
+  margin-inline-start: 350px;
+  width: 50%;
 }
 
 p{
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
-    padding: 1%; 
-    
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+  padding: 1%; 
+  
 }
 
 button{
-    background-color: #596f62;
-    color: #bdd1c5;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: #596f62;
+  color: #bdd1c5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between buttons */
+  padding: 10px; /* Optional: add padding for spacing */
 }

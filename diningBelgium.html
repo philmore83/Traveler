@@ -10,15 +10,18 @@
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
+            
             <h1>Belgian Dining Selection</h1>
+            <div class="button-container"></div>
+                <button id="backIndex"class="btn btn-primary mt-3">City</button>
+                <button id="backLodging"class="btn btn-primary mt-3">Lodging</button>
+                <button id="submit-dining" class="btn btn-primary mt-3">Submit Choices</button>
+            </div>
         </header>
         <main>
             <section class="container-lg">
                     <br>
-                    <h3>Frites Atelier</h3>
+                    <h3><input type="checkbox" class="select-checkbox" id="Frites Atelier">Frites Atelier</h3>
                 <div class="image-container">
                     <a href="https://www.fritesatelier.com/">
                         <img class="image-1" src="../Traveler/assets/images/dining/Frites.jpg" alt="Frites Atelier">
@@ -27,7 +30,7 @@
                 </div>
                     <p>Frites Atelier was born out of love for authentic flavors, culinary craftsmanship and boundless hospitality with one unique focus: offering a sensational Frites experience that unites people in their love for this simple and delicious comfort food. Prior to the launch of Frites Atelier, Michelin star chef Sergio Herman spent no less than 18 months developing the unique Frites Atelier-Frites. His focus on the continuous development and improvement of every culinary aspect is second to none. This characteristic and complete approach to taste and feeling has created Frites Ateliers that can adorn the lively streets of world cities.</p>
                     <br>
-                    <h3>Amadeus</h3>
+                    <h3><input type="checkbox" class="select-checkbox" id="Amadeus">Amadeus</h3>
                 <div class="image-container">
                     <a href="https://amadeus-resto.be/en/">
                         <img class="image-1" src="../Traveler/assets/images/dining/amadeo.jpg" alt="amadeus">
@@ -36,7 +39,7 @@
                 </div>
                     <p>Amadeus restaurant is a sculptors studio converted into a fine dining setting. This is one of the best restaurants in Belgium Brussels which offers the perfect feel and ambience for a romantic dinner or a friendly get together. The walls are adorned with designs inspired from the figures in the old churches which add a different vibe to the entire area. The speciality food served here which is loved by every frequent visitor include beef carpaccio, spare ribs, ricotta, lasagna and spinach tortellini.</p>
                     <br>
-                    <h3>Gaufres and Waffles</h3>
+                    <h3><input type="checkbox" class="select-checkbox" id="Gaufres and Waffles">Gaufres and Waffles</h3>
                 <div class="image-container">
                     <a href="https://gaufresandwaffles.be/en/home/">
                         <img class="image-1" src="../Traveler/assets/images/dining/gaufres.jpg" alt="Gaufres">
@@ -45,7 +48,7 @@
                 </div>
                     <p>In the King's Gallery in the heart of Brussels, Gaufres&Waffles opens on Thursday with recipes developed by star chef Yves Mattagne (of Sea Grill**). In this restaurant, the waffle is no longer a dessert or a sweet snack but rather a meal.The Brussels waffle, also famous among tourists, stands out for its creations with unconventional garnishes such as Americain, duck liver, lobster or salmon. The waffle is also served with sweet toppings (chocolate, apples, pineapple or blueberries).</p>
                     <br>
-                    <h3>Park</h3>     
+                    <h3><input type="checkbox" class="select-checkbox" id="Park">Park</h3>     
                 <div class="image-container">
                     <a href="https://www.parkrestaurant.be/index.html">
                         <img class="image-1" src="../Traveler/assets/images/dining/park.jpg" alt="Park">
@@ -57,6 +60,7 @@
                 </div>
             </section>
         </main>
+            <script src="./assets/js/dining.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
     <footer>
