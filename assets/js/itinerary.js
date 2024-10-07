@@ -28,6 +28,7 @@ backCity.addEventListener('click', function (event) {
     event.preventDefault();
     redirectPage("index.html");
    // renderMessage();
+   localStorage.clear(); // clear all local storage
   });
   const redirectPage = function (url) {
     redirectURL = url;

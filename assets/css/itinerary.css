@@ -2,6 +2,11 @@
     background-color: #bdd1c5 ;
 }
 
-h1, h2, h3, h5{
+h1, h2, h3{
     text-align: center;
+}
+
+h5{
+    text-align: center;
+    padding: 1%;
 }
