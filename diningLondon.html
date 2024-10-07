@@ -10,16 +10,20 @@
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
+            
             <h1>London Dining Selection</h1>
+            <div class="button-container">
+                <button id="backIndex"class="btn btn-primary mt-3">City</button>
+                <button id="backLodging"class="btn btn-primary mt-3">Lodging</button>
+                <button id="submit-dining" class="btn btn-primary mt-3">Submit Choices</button>
+            </div>
+            
         </header>
         <main>
-            <section class="container-lg ">
+            <section class="container-lg my-5">
                     <br>
-                    <h3>Panadera</h3>     
-                <div class="image-container" id="panadera">
+                    <h3><input type="checkbox" class="select-checkbox" id="Panadera">Panadera</h3>     
+                <div class="image-container">
                     <a href="https://www.panaderabakery.com/">
                         <img class="image-1" src="../Traveler/assets/images/dining/panadera.jpg" alt="Panadera">
                         <img class="image-2" src="../Traveler/assets/images/dining/panadera2.jpg" alt="Panadera2">
@@ -27,8 +31,8 @@
                 </div>
                     <p>Oxford Street isn’t a place we usually recommend hanging around, but Filipino bakery Panadera’s beef hash sando is an excellent reason to tackle Bond Street tube station. There are other fillings like a creamy chicken and mushroom, and panko aubergine too, but the beef is our favourite. From the outside, you’ll see customers on short plastic white stools, hunched over sando boxes with complete concentration. There isn’t much room inside the bright, white space, but whether you eat in, standing outside, or on the Jubilee line, these creative, perfectly executed sandwiches are some of the best in London. </p>
                     <br>
-                    <h3>Leydi</h3>
-                <div class="image-container" id="leidy">
+                    <h3><input type="checkbox" class="select-checkbox" id="Leydi">Leydi</h3>
+                <div class="image-container">
                     <a href="https://hydehotels.com/london-city/restaurants-bars/leydi-restaurant/">
                         <img class="image-1" src="../Traveler/assets/images/dining/leydi.jpg" alt="leydi">
                         <img class="image-2" src="../Traveler/assets/images/dining/leydi2.jpg" alt="leydi2">
@@ -36,16 +40,16 @@
                 </div>
                     <p>Somewhere between a glossy Elle Decor campaign and a beauty pageant for stylish, dressed-up hummus is Leydi. This all-day modern Turkish restaurant in the City’s Hyde London hotel is from the people behind the now-closed Oklava, and the mezze is excellent. The hummus is so rich and smooth it could feasibly be from the Amal Clooney bloodline, while the atom is a glorious split personality of a dish with cooling yoghurt and sizzling urfa chilli oil. The crowd is a similar mixed medley: suits lamenting their 4am Eurostar to Brussels while ordering more raki and a parade of Rixo dresses being debuted for classy catch-ups. The best spot in the house is the buzzing side dining room. Its gallery walls and cloud-like lampshades are the perfect chicest-friend’s-dinner-party backdrop. </p>
                     <br>
-                    <h3>Ambassadors Clubhouse</h3>
+                    <h3><input type="checkbox" class="select-checkbox" id="Ambassadors Clubhouse">Ambassadors Clubhouse</h3>
                 <div class="image-container">
                     <a href="https://ambassadorsclubhouse.com/">
                         <img class="image-1" src="../Traveler/assets/images/dining/ambassadors.jpg" alt="Ambassadors">
-                        <img class="image-2" src="../Traveler/assets/images/dining/ambassadors2" alt="Ambassadors2">
+                        <img class="image-2" src="../Traveler/assets/images/dining/ambassadors2.jpg" alt="Ambassadors2">
                     </a>
                 </div>
                     <p>From the people behind Gymkhana, Brigadiers, and Bibi, Ambassadors Clubhouse has been set up for success—and it delivers. This fun Indian restaurant in Mayfair has two floors and a heated verandah, you know, in case you need a break from the banging playlist and tiger print inside. There’s some serious party energy downstairs if you want it, but honestly? It doesn’t matter where you sit. The food is hit after hit of bold flavours and moreish sauces. Case in point: the excellent lamb nalli barrah—a mix of charred, tender lamb shanks and chops—and the BBQ butter chicken chops with a velvety, creamy sauce. Whether you’re planning a special date or a group birthday dinner, this spot effortlessly does it all. </p>
                     <br>
-                    <h3>Bunhead Bakery</h3>
+                    <h3><input type="checkbox" class="select-checkbox" id="Bunhead Bakery">Bunhead Bakery</h3>
                 <div class="image-container">
                     <a href="https://www.bunheadbakery.com/">
                         <img class="image-1" src="../Traveler/assets/images/dining/bunhead.jpg" alt="Bunhead">
@@ -58,7 +62,8 @@
             </section>
         </main>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+            <script src="./assets/js/dining.js"></script>
+        </body>
     <footer>
         <h5>Made by Team 4</h5>
     </footer>
