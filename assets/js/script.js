@@ -22,6 +22,8 @@ destinationContainer.addEventListener('click', function(event) {
 
         destinationName = event.target.id; 
         console.log("Selected Destination: " + destinationName);
+        destinationDisplayNm = event.target.dataset.destinationDisplayNm; 
+        console.log("Selected Destination: " + destinationDisplayNm);
     }
 });
 
@@ -44,6 +46,7 @@ submitButton.addEventListener('click', function (event) {
     startDate: startDate.value.trim(),
     endDate: endDate.value.trim(),
     destinationName: destinationName.trim(),
+    destinationDisplayNm: destinationDisplayNm.trim(),
   };
   localStorage.setItem('traveler', JSON.stringify(traveler));
   redirectPage("lodging.html");

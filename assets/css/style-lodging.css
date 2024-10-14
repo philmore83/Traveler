@@ -52,7 +52,7 @@ table tbody tr:hover {
     padding: 10px; /* Optional: add padding for spacing */
 }
 #cityImage {
-    width: 20%;    /* Image takes up the full width of its container */
+    width: 30%;    /* Image takes up the full width of its container */
     height: auto;   /* Maintains aspect ratio */
 }
 
