@@ -18,25 +18,63 @@
         <div class="container mt-3">
             <header>
                 <div class="button-container">
-                    <button id="backIndex"class="btn btn-primary mt-3">City</button>
+                    <button id="backIndex" class="btn btn-primary mt-3">City</button>
                     <button id="submitLodging" class="btn btn-primary mt-3">Next step: Dining</button>
                 </div>
-             
-                
+
+                <div class="modal fade" id="lodgingModal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-primary-emphasis text-center" id="lodgingModalLabel">Lodging</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3 property" id="property">
+                                    <h6>Property: </h6>
+                                </div>
+                                <div class="mb-3 price" id="price">
+                                    <h6>Price: </h6>
+                                </div>
+                                <div class="mb-3 rating" id="rating">
+                                    <h6>Rating: </h6>
+                                </div>
+                                <div class="mb-3 lodgingImage">
+                                    <div class="row gy-4 row-cols-1 ">
+                                        <div class="col">
+                                            <img src="" id="lodgingImage">
+                                            <h3 id="modalDestinationDisplayNm"></h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" id="closeButton"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary" id="storeLodging" data-bs-dismiss="modal">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <h1>Welcome to Traveler Lodging</h1>
                 <h2>Please Select Your Lodging</h2>
                 <div class="container-lg">
                     <div class="row gy-4 row-cols-1 ">
-                        <div class="col">
+                        <div class="col" style="min-height: 150px; min-width: 300px;"S>
                             <img src="" id="cityImage">
-                            <h3 id="destinationNm"></h3>
+                            <h3 id="destinationDisplayNm"></h3>
                         </div>
                         <div class="col">
                             <h3 id="start-date"></h3>
                             <h3 id="end-date"></h3>
-                            
                         </div>
-                        
+                        <div class="col">
+                            <h3 class="align-bottom" id="selectedProperty">Selected Lodging:</h3>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -51,17 +89,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr >
-                        <td><input type="checkbox" class="select-checkbox" id="hilton"></td>
+                    <tr>
+                        <td><input type="checkbox" class="select-checkbox" data-bs-toggle="modal"
+                                data-bs-target="#lodgingModal" data-property="Hilton" data-price="$180/day"
+                                data-rating="4 stars" data-lodging-src="../Traveler/assets/images/lodging/hilton-wb.jpg"
+                                id="Hilton"></td>
                         <td>Hilton</td>
                         <td>$180/day</td>
                         <td>4 Stars</td>
                         <td class="lodging-choices">
-                            <img src="../Traveler/assets/images/lodging/hilton-wb.jpg" id="greece">
+                            <img src="../Traveler/assets/images/lodging/hilton-wb.jpg" id="Greece">
                             Hilton
                     </tr>
-                    <tr >
-                        <td><input type="checkbox" class="select-checkbox" id="marriot"></td>
+                    <tr>
+                        <td><input type="checkbox" class="select-checkbox" data-bs-toggle="modal"
+                                data-bs-target="#lodgingModal" data-property="Marriott" data-price="$210/day"
+                                data-rating="5 stars" data-lodging-src="../Traveler/assets/images/lodging/Marriott.jpg"
+                                id="Marriott"></td>
                         <td>Marriott</td>
                         <td>$210/day</td>
                         <td>5 Stars</td>
@@ -69,8 +113,11 @@
                             <img src="../Traveler/assets/images/lodging/Marriott.jpg" id="greece">
                             Marriott
                     </tr>
-                    <tr >
-                        <td><input type="checkbox" class="select-checkbox" id="hampton"></td>
+                    <tr>
+                        <td><input type="checkbox" class="select-checkbox" data-bs-toggle="modal"
+                            data-bs-target="#lodgingModal" data-property="Hampton Inn" data-price="$140/day"
+                            data-rating="3 stars" data-lodging-src="../Traveler/assets/images/lodging/hampton-color.jpg"
+                             id="Hampton Inn"></td>
                         <td>Hampton Inn</td>
                         <td>$140/day</td>
                         <td>3 Stars</td>
@@ -78,8 +125,11 @@
                             <img src="../Traveler/assets/images/lodging/hampton-color.jpg" id="greece">
                             Hampton Inn
                     </tr>
-                    <tr >
-                        <td><input type="checkbox" class="select-checkbox" id="western"></td>
+                    <tr>
+                        <td><input type="checkbox" class="select-checkbox" data-bs-toggle="modal"
+                            data-bs-target="#lodgingModal" data-property="Best Western" data-price="$100/day"
+                            data-rating="2 stars" data-lodging-src="../Traveler/assets/images/lodging/BWMain.jpg"
+                            id="Best Western"></td>
                         <td>Best Western</td>
                         <td>$100/day</td>
                         <td>2 Stars</td>
@@ -92,7 +142,7 @@
             </table>
 
             <footer>
-                
+
             </footer>
         </div>
     </section>
